@@ -12,6 +12,14 @@ body{
 		background-color:orange;
 		width=100px;<--This is not working-->
 		height=200px;
+		position:fixed;
+		top:20px;
+		left:50px;<!It keeps the position fixed as we scroll down .In position:absolute it remains fixed but vanishes as we move down
+		position:relative;It means relative to the original place(static postion)
+		top:50px;
+		left:100px;
+		z-index:5px;-->
+		<!--float:right;-->
 	}
 p{
 	color:red;
@@ -21,7 +29,15 @@ p{
 		}
 .pink{
 		color:pink;
+		background-color:green;
+		margin-left:400px;
+		<!--position:relative;
+		z-index:10px;-->
+		<!--float:left;-->
 		}
+<!--.clear{This clears from float left or float right.
+	clear:both;
+	}-->		
 #bold{
 		font-weight:bold;
 	  }
@@ -33,6 +49,9 @@ p{
 <p style="color:blue;font-size:100%">Just testing </p>
 </div>
 <p class="large pink">This is large sized with pink </p>
-<p id="bold" class="pink">We can use <span  class="large">id </span>only once </p>
+<p id="bold" >We can use <span  class="large">id </span>only once </p>
+
+
+
 </body>
 </html>
