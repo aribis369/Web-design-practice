@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<title>
+css
+</title>
+<style type="text/css">
+body{ 
+		background-color:yellow;
+	}
+.orangebox{
+		background-color:orange;
+		width=100px;<--This is not working-->
+		height=200px;
+		position:fixed;
+		top:20px;
+		border:5px black solid; 
+		<!--It keeps the position fixed as we scroll down .In position:absolute it remains fixed but vanishes as we move down
+		position:relative;It means relative to the original place(static postion)
+		top:50px;
+		left:100px;
+		z-index:5px;-->
+		<!--float:right;-->
+	}
+p{
+	color:red;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-style:italic;
+	text-align:center;
+	padding-left:20px;
+
+	}
+.large{
+		font-size:200%;
+		}
+.green{
+		color:pink;
+		background-color:green;
+		margin-left:250px;
+		border-style:dashed double groove outset;
+		border-width:3px;
+		border-color:yellow red pink blue;
+		<!--position:relative;
+		z-index:10px;-->
+		<!--float:left;-->
+		}
+<!--.clear{This clears from float left or float right.
+	clear:both;
+	}-->		
+#bold{
+		font-weight:bold;
+	  }
+a :link{    
+    color:black;
+
+}
+a:visited{
+color:green;
+}
+a:hover{
+text-decoration:underline;
+font-size:200%;
+}
+a:active{
+color:blue;
+}
+</style>
+</head>
+<body>
+<div class="orangebox">
+<p> This is inline css</p>
+<p style="color:blue;font-size:100%">Just testing </p>
+</div>
+
+<p class="large green">This is large sized with green </p>
+
+<p id="bold" >We can use <span  class="large">id </span>only once </p>
+<a href="https://www.google.co.in/"target="_blank">Google</a>
+
+
+
+</body>
+</html>
